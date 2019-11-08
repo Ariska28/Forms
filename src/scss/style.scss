@@ -1,0 +1,161 @@
+@import 'reset';
+
+.conteiner{
+	margin:30px 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&-block {
+		display: flex;
+		margin-top: 30px;
+	}
+}
+
+.circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #FF8300;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+
+	&__pen {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.send--blue {
+	padding: 14px 51px;
+	background-color: white;
+	border:2px solid #005FAF;
+	border-radius: 4px 4px 24px 4px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #005FAF;
+	outline: none;
+}
+
+.send--blue:hover {
+	border-radius: 4px;
+	background: #005FAF;
+	color: #FFFFFF;
+}
+
+.send--blue:active {
+	border-radius: 4px;
+	background: #006FCD;
+	color: #FFFFFF;
+}
+
+
+.send--red {
+	padding: 12px 31px;
+	background: linear-gradient(100.03deg, #FF823C 0%, #FFBC47 100%);
+	border-radius: 4px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+	outline: none;
+	border: none;
+}
+
+.send--red:hover {
+	background: #FF823C;
+}
+
+.send--red:active {
+	background: #FF9E42;
+}
+
+.get-started {
+	padding: 13px 31px;
+	background: #fff;
+	border-radius: 4px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: black;
+	outline: none;
+	border: none;
+	box-shadow: -2px 8px 10px 2px rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+}
+
+
+.get-started:hover {
+	background: #5C5C5C;
+	color: #FFFFFF;
+	box-shadow: none;
+}
+
+.get-started:hover .arrow{
+	fill: #5C5C5C;
+}
+
+
+.get-started:active  {
+	background: #ADADAD;
+}
+
+.get-started:active .arrow{
+	opacity: 0;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	fill:  white;
+}
+
+.people {
+	width: 30px;
+	height: 40px;
+	fill: white;
+	stroke:#7C4DFF;
+}
+
+
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7C4DFF;
+	letter-spacing: -0.25px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 600;
+	background:#fff;
+	border: none;
+	border-radius: 999px;
+	box-shadow: -2px 5px 7px 2px rgba(0,0,0,0.2);
+	padding: 0px 10px;
+}
+
+.login:hover {
+	background: #7C4DFF;
+	color: #fff;
+	box-shadow: -2px 5px 7px 2px rgba(0,0,0,0.09);
+}
+
+.login:hover .people{
+	fill: #7C4DFF;
+	stroke:#fff;
+	
+}
+
+
