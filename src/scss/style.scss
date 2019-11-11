@@ -80,7 +80,6 @@
 }
 
 .get-started {
-	padding: 13px 31px;
 	background: #fff;
 	border-radius: 4px;
 	font-family: Montserrat;
@@ -92,8 +91,11 @@
 	outline: none;
 	border: none;
 	box-shadow: -2px 8px 10px 2px rgba(0,0,0,0.1);
+	width: 200px;
+	padding: 8px 0;
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 
@@ -101,10 +103,11 @@
 	background: #5C5C5C;
 	color: #FFFFFF;
 	box-shadow: none;
+	justify-content: flex-end;
+
 }
 
 .get-started:hover .arrow{
-	fill: #5C5C5C;
 }
 
 
@@ -117,15 +120,13 @@
 }
 
 .arrow {
-	width: 30px;
+	width: 50px;
 	height: 30px;
-	fill:  white;
 }
 
 .people {
 	width: 30px;
 	height: 40px;
-	fill: white;
 	stroke:#7C4DFF;
 }
 
@@ -153,9 +154,48 @@
 }
 
 .login:hover .people{
-	fill: #7C4DFF;
 	stroke:#fff;
 	
 }
 
+
+.clear {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 33px;
+		font-family: 'Rajdhani', sans-serif;
+		border: none;
+		background: #ECF2F7;
+		color: #4B596D;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 20px;
+
+	&__img {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+	}
+
+}
+.clear:hover {
+	background:#b0d9f7;
+}
+
+
+
+.start {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	border:none;
+	
+	&__img1 {
+		width: 50px;
+		height: 30px;
+		margin-left: 10px;
+	}
+}
 
