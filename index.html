@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Rajdhani|Yrsa&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -57,6 +58,7 @@
                 </svg>
 			</button>	
 		</div>
+
 		<div class="conteiner-block">
 			<button class="clear">
 				Clear Form
@@ -66,20 +68,77 @@
                 </svg>
 			</button>
 		</div>
+
 		<div class="conteiner-block">
 			<button class="start">
-				Start Now 
+				<p class="start__text">
+					Start Now 
+				</p>
 				<svg class="start__img1">
 	                <use xlink:href="#start1" x="0" y="0">
 	            </use>
                 </svg>
+                <svg class="start__img2">
+	                <use xlink:href="#start2" x="0" y="0">
+	            </use>
+                </svg>
 			</button>
 		</div>
-		<div class="conteiner-block"></div>
+
+		<div class="conteiner-block">
+			<button class="yesterday">
+				<p class="yesterday__paragraph">
+					Get started yesterday
+				</p>
+				<svg class="yesterday__img">
+	                <use xlink:href="#arrow" x="-5" y="-5	">
+	            </use>
+                </svg>
+			</button>
+		</div>
+
+		<div class="conteiner-block conteiner-block--flex">
+
+			<button class="AppStore">
+				<svg class="AppStore__img">
+	                <use xlink:href="#apple" x="0" y="0">
+	            </use>
+                </svg>
+				<p class="AppStore__paragraph">
+					Get it from </br>
+					<span class="AppStore__paragraph-big">
+					App Store
+					</span>
+				</p>
+			</button>
+
+			<button class="WebApp">
+				<svg class="WebApp__img">
+	                <use xlink:href="#web" x="0" y="0">
+	            </use>
+                </svg>
+				<p class="WebApp__paragraph">
+					Open our </br>
+					<span class="AppStore__paragraph-big">
+					Web App
+					</span>
+				</p>
+			</button>
+
+		</div>
 	</main>
 
 
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="apple" fill="none">
+		<path d="M21.0438 24.4984C19.8673 26.2343 18.6199 27.9281 16.7204 27.9561C14.8209 27.9981 14.2114 26.8502 12.0568 26.8502C9.888 26.8502 9.22177 27.9281 7.42152 27.9981C5.56458 28.0681 4.16124 26.1503 2.97053 24.4564C0.546579 20.9986 -1.31036 14.629 1.18446 10.3453C2.4177 8.21745 4.62902 6.87354 7.02462 6.83155C8.83904 6.80355 10.5684 8.04947 11.6882 8.04947C12.7939 8.04947 14.8918 6.55157 17.089 6.77555C18.0104 6.81755 20.5902 7.13953 22.2487 9.54737C22.1211 9.63136 19.1727 11.3392 19.2011 14.881C19.2436 19.1087 22.9575 20.5226 23 20.5366C22.9575 20.6346 22.4046 22.5525 21.0438 24.4984ZM12.9498 2.09986C13.9846 0.937938 15.6998 0.0559963 17.1173 0C17.3016 1.63789 16.6354 3.28978 15.6431 4.4657C14.665 5.65562 13.0491 6.57956 11.4614 6.45357C11.2488 4.84368 12.0426 3.16379 12.9498 2.09986Z" fill="white"/>
+	</symbol>
+
+	<symbol id="web" fill="none">
+		<path d="M32.4 13.2H15.6C14.2745 13.2 13.2 14.2745 13.2 15.6V32.4C13.2 33.7255 14.2745 34.8 15.6 34.8H32.4C33.7254 34.8 34.8 33.7255 34.8 32.4V15.6C34.8 14.2745 33.7254 13.2 32.4 13.2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M13.2 20.4H34.8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M20.4 34.8V20.4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 
 	<symbol id="start1" fill="none"  >
 		<path d="M1.08931 9.5H20.6595" stroke="#649CD3" stroke-linecap="square"/>
