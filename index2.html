@@ -9,24 +9,52 @@
 <body>
 	<div class="conteiner">
 		<form class="form">
-			<p class="form-caption">Opening hours </p>
-		<input class="form-password" type="password" required="" placeholder=" " min="1" max="6"  name="psw">
-		<svg class="form__img">
-	        <use xlink:href="#ok" x="0" y="0">
-	        </use>
-         </svg>
-         <div class="form__circle">
-         	
-         </div>
+			<div class="form-section">
+				<p class="form-caption">Opening hours </p>
+				<input class="form-password" type="password" required="" placeholder=" "  name="psw"/>	
+				<div class="requirements">
+				Error  message here 
+				</div>
+			</div>
+
+			<div class="form-section">
+				<input class="form-email" type="email"  name="email" required placeholder=" " />
+				<label class="form-label" for="email">Name*</label>
+				<div class="requirements">
+				Must be a valid email address.
+				</div>
+				<div class="error">
+					<svg class="form-triangle">
+									<use xlink:href="#traingle"  x="0" y="0">
+									</use>
+					</svg>
+					<svg class="form-heit">
+							<use xlink:href="#heit"  x="10" y="6">
+							</use>
+					</svg>
+					<svg class="form-circle">
+							<use xlink:href="#circle"  x="10" y="18">
+							</use>
+					</svg>
+				</div>
+			</div>
 		</form>
 	</div>
+
+	<svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">	
+		<symbol id="traingle">
+			<path d="M12.6587 1.2458C13.2518 0.251401 14.7482 0.251401 15.3413 1.2458L27.2936 21.287C27.8672 22.2489 27.1671 23.5 25.9523 23.5H2.04769C0.832938 23.5 0.132788 22.2489 0.70641 21.287L12.6587 1.2458Z" fill="#FF6E6E" stroke="#FF6E6E"/>
+		</symbol>
+
+		<symbol id="heit">
+			<path d="M0 0H4L3 9H1L0 0Z" fill="white"/>
+		</symbol>
+
+		<symbol id="circle">			
+			<circle cx="2" cy="2" r="2" fill="white"/>					
+		</symbol>
+	</svg>
+		
 </body>
-
-<svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<symbol id="ok">
-	<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2782 1.66999L4.50001 7.56372L0.721832 3.70998L1.72183 2.68999L4.50001 5.52373L9.27818 0.649994L10.2782 1.66999Z" fill="white"/>
-	</symbol>
-
-</svg>
 
 </html>

@@ -1,12 +1,21 @@
 @import 'reset';
 
-.conteiner{
+.conteiner {
 	width: 80%;
 	margin: 50px 9%;
 } 
 
 .form {
 	position: relative;
+	display: inline-block;
+
+	
+
+	&-section {
+		position: relative;
+		background: white;
+		margin-bottom: 50px;
+	}
 
 	&-caption {
 	font-family: 'Nunito', sans-serif;
@@ -15,20 +24,8 @@
 	color: #5D5D5D;
 	}
 
-	&__circle {
-		background: #FF8300;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		top:0;
-	}
 
-	&__img {
-		width: 10px;
-		height: 10px;
-		position: absolute;
 
-	}
 
 	&-password {
 		padding-left: 11px;
@@ -38,21 +35,159 @@
 		border-radius: 5px;
 		border: 1px solid #DCDCDC;
 
+	
+
+		&:focus {
+			border: 1px solid red;
+			background-image: url('../img/novalid.png')  ;
+			background-position: 95% center;
+			background-repeat:no-repeat;
+		}
+
+
+		
+		&:valid:not(:placeholder-shown) {
+			border: 1px solid #FF8300; 
+			background-image: url('../img/valid.png')  ;
+			background-position: 95% center;
+			background-repeat:no-repeat;
+		}
+
+		&:valid:not(:placeholder-shown) {
+			& ~ .requirements {
+				display: none;
+			}
+		}
+
+		&:focus {
+			& ~ .requirements {
+				display:block;
+			}
+		}
+	
 	}
+
+	&-label {
+		opacity: 0.3;
+		font-weight: bold;
+		position: absolute;
+		top: 37%;
+		left: 20px;
+	}
+
+	&-email {
+		width: 100%;
+		border: 0;
+		padding: 20px 20px 20px 20px;
+		background: #fff;
+		border: 1px solid #005FAF;
+		box-sizing: border-box;
+		border-radius: 2px;
+
+		&:focus {
+        
+			outline: 0;
+
+			border: 2px solid #34D2D2;
+			caret-color: #34D2D2;
+			
+			& + .form-label {
+				top: 20%;
+				left: 20px;
+				font-size: 10px;
+			}
+		}
+
+		&:valid {
+			border: 2px solid #34D2D2;
+		
+			& + .form-label {
+				opacity: 0;
+			}
+		}
+
+		&:invalid:not(:focus):not(:placeholder-shown) {
+			border: 1px solid #FF6E6E;
+			box-sizing: border-box;
+			border-radius: 2px;
+			& + .form-label {
+				top: 20%;
+				left: 20px;
+				font-size: 10px;
+			}
+		}
+
+		&:invalid:not(:focus):not(:placeholder-shown)  {
+			& ~ .requirements {
+				display: block;
+			}
+		}
+
+		
+		&:invalid:not(:focus):not(:placeholder-shown)  {
+			& ~ .error {
+				display: block;
+			}
+		}
+	}
+
+
+
+	&-triangle {
+		position: absolute;
+		right: 5%;
+		top:30%;
+		width: 30px;
+		height:30px;
+		z-index:1;
+	}
+
+	&-heit {
+		position: absolute;
+		right: 4%;
+		top:30%;
+		width: 30px;
+		height:30px;
+		z-index:10;
+	}
+	
+	&-circle {
+		position: absolute;
+		right: 4%;
+		top:30%;
+		width: 30px;
+		height:30px;
+		z-index:11;
+	}
+
+	.requirements {
+		position: absolute;
+		color: red;
+		text-align: left;
+		font-size: 12px;
+		margin-top: 3px;
+		display: none;
+	}
+
+	.error {
+		display: none;
+	}
+	
 }
 
 
-.form-password:focus {
-	border: 1px solid #FF8300;
-}
-
-.form-password:invalid:not(:placeholder-shown) {
-	border: 3px solid red;
-}
-
-.form-password:valid:not(:placeholder-shown) {
-	border: 3px solid green;
-}
 
 
-/*Можно ли интпутам задавать факсированную высоту и ширину?*/
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/*-----------------------*/
+
+
