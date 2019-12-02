@@ -176,18 +176,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-/*!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-
 /*-----------------------*/
 
-
+.form-categories {
+	&__list1 {		
+		background: #FDFDFD;
+		border: 1px solid #DCDCDC;
+		box-sizing: border-box;
+		border-radius: 5px;padding: 10px 80px 10px 10px;
+	}
+}
