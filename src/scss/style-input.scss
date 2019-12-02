@@ -1,0 +1,58 @@
+@import 'reset';
+
+.conteiner{
+	width: 80%;
+	margin: 50px 9%;
+} 
+
+.form {
+	position: relative;
+
+	&-caption {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #5D5D5D;
+	}
+
+	&__circle {
+		background: #FF8300;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		top:0;
+	}
+
+	&__img {
+		width: 10px;
+		height: 10px;
+		position: absolute;
+
+	}
+
+	&-password {
+		padding-left: 11px;
+		height: 45px;
+		width: 205px;
+		background: #FDFDFD;
+		border-radius: 5px;
+		border: 1px solid #DCDCDC;
+
+	}
+}
+
+
+.form-password:focus {
+	border: 1px solid #FF8300;
+}
+
+.form-password:invalid:not(:placeholder-shown) {
+	border: 3px solid red;
+}
+
+.form-password:valid:not(:placeholder-shown) {
+	border: 3px solid green;
+}
+
+
+/*Можно ли интпутам задавать факсированную высоту и ширину?*/
