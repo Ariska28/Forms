@@ -5,6 +5,7 @@
 	<title>input</title>
 	<link rel="stylesheet" type="text/css" href="css/style-input.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="conteiner">
@@ -21,7 +22,7 @@
 				<input class="form-email" type="email"  name="email" required placeholder=" " />
 				<label class="form-label" for="email">Name*</label>
 				<div class="requirements">
-				Must be a valid email address.
+				Please enter correct email
 				</div>
 				<div class="error">
 					<svg class="form-triangle">
@@ -38,22 +39,79 @@
 					</svg>
 				</div>
 			</div>
+
+			<div class="form-section">
+				<svg class="form-man">
+					<use xlink:href="#man"  x="0" y="0">
+					</use>
+				</svg>
+				<input class="form-name" type="text" required="" placeholder="First name"  name="psw"/>
+			</div>
 		</form>
+
 		
-<form class="form-categories" action="formdata" method="post" name="form">
-		<h2 class="form-categories__caption">Subcategory </h2>
-	<p>	
-		<select class="form-categories__list1">
-			<option></option>
-			<option>Option</option>
-			<option>Textarea</option>
-			<option>Label</option>
-			<option>Fieldset</option>
-			<option>Legend</option>
-		</select>
-	</p>
-	</form>  
+		
+		<div class="select">
+			<h2 class="select-caption">Subcategory </h2>
+			<select class="select-categories">
+				<option class="select-li"></option>
+				<option class="select-li">Option</option>
+				<option class="select-li">Textarea</option>
+				<option class="select-li">Label</option>
+				<option class="select-li">Fieldset</option>
+				<option class="select-li">Legend</option>
+			</select>
+		</div>
+
+		<div class="select1">
+			<h2 class="select1-caption">Member Type </h2>
+			<select class="select1-categories">
+				<option class="select1-li">Designee</option>
+				<option class="select1-li">Developer</option>
+				<option class="select1-li">Tester</option>
+				<option class="select1-li">Team lead</option>
+				<option class="select1-li">PM</option>
+				<option class="select1-li">BA</option>
+			</select>
+		</div>
+
+	<div class="check">
+		<label class="checkbox">Fix price
+		<input class="checkbox-input" type="radio" checked="checked" name="radio">
+		<span class="checkmark"></span>
+		</label>
+		<label class="checkbox">Different prices
+		<input class="checkbox-input" type="radio" name="radio">
+		<span class="checkmark"></span>
+		</label>
 	</div>
+
+	<div class="check">
+			<label class="checkbox1">Fix price
+			<input class="checkbox1-input" type="radio" checked="checked" name="radio">
+			<span class="checkmark1"></span>
+			</label>
+			<label class="checkbox1">Different prices
+			<input class="checkbox1-input" type="radio" name="radio">
+			<span class="checkmark1"></span>
+			</label>
+		</div>
+
+		<div class="check">
+			<label class="checkbox2">I accept the terms of service and privacy policy.
+			<input class="checkbox2-input" type="radio" checked="checked" name="radio">
+			<span class="checkmark2"></span>
+			</label>
+			<label class="checkbox2">I accept the terms of service and privacy policy.
+			<input class="checkbox2-input" type="radio" name="radio">
+			<span class="checkmark2"></span>
+			</label>
+		</div>
+
+		<div class="pentagon"></div>
+	</div>
+
+	
 
 	<svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">	
 		<symbol id="traingle">
@@ -67,6 +125,12 @@
 		<symbol id="circle">			
 			<circle cx="2" cy="2" r="2" fill="white"/>					
 		</symbol>
+
+		<symbol id="man" fill="none">		
+			<path d="M28 29V27C28 25.9391 27.5786 24.9217 26.8284 24.1716C26.0783 23.4214 25.0609 23 24 23H16C14.9391 23 13.9217 23.4214 13.1716 24.1716C12.4214 24.9217 12 25.9391 12 27V29" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M20 19C22.2091 19 24 17.2091 24 15C24 12.7909 22.2091 11 20 11C17.7909 11 16 12.7909 16 15C16 17.2091 17.7909 19 20 19Z" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</symbol>
+
 	</svg>
 		
 </body>
