@@ -264,8 +264,8 @@
 		border:none;
 		box-sizing: border-box;
 		border-radius: 5px;
-		width: 15%;
-		padding: 6px 80px 6px 10px;
+		width: 250px;
+		padding: 6px 10px;
 		background-image: url('../img/arrow1.png');
 		background-position: 92%;
 		background-repeat:no-repeat;
@@ -526,4 +526,90 @@
 		background: #649CD3;
 	}
 }
+/*------------------------------------------------*/
+.img {
+	display: flex;
 
+	&-conteiner {
+		height: 200px;
+		max-width: 200px;
+		overflow: hidden;
+		border-radius: 5px;
+		position: relative;
+		object-fit: cover;
+		border: 0.5px solid #E2E2E5;
+		flex: 0 0 50%; 
+		margin-right: 30px;
+
+		&__img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: cover;
+		}
+		&__buttons {
+			position: absolute;
+			z-index: 5;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			display:flex;
+		}
+
+		&__button {
+			background: #FF8300;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			border: none;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			margin-right:7px;
+		}
+
+		.gun {
+			width: 25px;
+			height: 25px;	
+		}
+		
+		.pan {
+			width: 30px;
+			height: 20px;
+		}
+		
+		.circle {
+			width:60px;
+			height: 60px;
+			border-radius: 50%;
+			border: 1.5px dashed #1D24AB;
+			background: none;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		.plus {
+			color: #1D24AB;
+			font-size: 20px;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.caption {
+			color: #FF8300;
+			font-family: 'Nunito', sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			position: absolute;
+			top:80%;
+			left:50%;
+			transform: translate(-50%);
+			width: 80%;
+			text-align: center;
+		}
+	}
+}
