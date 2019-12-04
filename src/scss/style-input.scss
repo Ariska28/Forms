@@ -422,8 +422,11 @@
 	position: relative;
 	padding-left: 35px;
 	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 22px;
+	color: #858585;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.25px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -436,79 +439,91 @@
 		height: 0;
 		width: 0;
 	}
-	.checkmark2 {
+	.square {
 		position: absolute;
-		top: 0;
+		top: 0px;
 		left: 0;
 		height: 25px;
 		width: 25px;
-		background-color: #eee;
 	}
 
-	&:hover &-input ~ .checkmark2 {
-		background-color: #ccc;
+	
+	.ar {
+		position: absolute;
+		top:0px;
+		left:6px;
+		width: 25px;
+		height: 25px;
+		display: none;
+	}
+    
+	& &-input:checked ~ .ar {
+		display: block;
 	}
 
-	& &-input:checked ~ .checkmark2 {
-	background: #FF8300;
+}
+
+
+
+.checkbox3 {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4B596D;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	&-input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+	.checkmark3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 20px;
+		width: 21px;
+		border: 1px solid #B9C9D3;
 	}
 
-	.checkmark2:after {
+	&:hover &-input ~ .checkmark3 {
+		background-color:  #DEE8F1;
+	}
+
+	& &-input:checked ~ .checkmark3 {
+	background: #DEE8F1;
+	border: 1px solid #DEE8F1;
+	}
+
+	.checkmark3:after {
 		content: "";
 		position: absolute;
 		display: none;
 	}
     
-	& &-input:checked ~ .checkmark2:after {
+	& &-input:checked ~ .checkmark3:after {
 		display: block;
 	}
 
-	& .checkmark2:after {
-		left: 9px;
-		top: 3px;
+	& .checkmark3:after {
+		left: 6px;
+		top: 5.5px;
 		width: 8px;
-		height: 15px;
-		border: solid white;
-		border-width: 0 3px 3px 0;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-		transform: rotate(45deg);
+		height:8px;
+		border-radius: 50%;
+		background: #649CD3;
 	}
-
 }
-
-.pentagon {
-width: 25px;
-height: 3px;
-background: #277bab; 
-transform: rotate(0deg);
-}
-
-.pentagon::after {
-	position: absolute	;
-	top: 13.7px;
-	border: none;
-	left: -15px;
-	content: ' ';
-	width: 30px;
-	height: 3px;
-	background: #277bab;
-	transform: rotate(90deg);
-	border-radius: 5px;
-	}
-
-	.pentagon::before {
-		position: absolute	;
-		top: 28.8px;
-		border: none;
-		left: -1.7px;
-		content: ' ';
-		width: 30px;
-		height: 3px;
-		background: #277bab;
-		transform: rotate(0deg);
-		border-radius: 5px;
-		}
-
-
 
