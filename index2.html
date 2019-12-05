@@ -12,14 +12,20 @@
 
 <body>
 	<div class="conteiner">
+
+
 		<form class="form">
+
 			<div class="form-section">
-				<p class="form-caption">Opening hours </p>
-				<input class="form-password" type="password" required="" placeholder=" " name="psw" />
+				<label class="form-caption">Opening hours
+				<input class="form-password"pattern="[0-9]{6}" type="password" required="" placeholder=" " name="psw" />
+			    </label>
+			
 				<div class="requirements">
 					Error message here
 				</div>
 			</div>
+
 
 			<div class="form-section">
 				<input class="form-email" type="email" name="email" required placeholder=" ">
@@ -32,16 +38,9 @@
 						<use xlink:href="#traingle" x="0" y="0">
 						</use>
 					</svg>
-					<svg class="form-heit">
-						<use xlink:href="#heit" x="10" y="6">
-						</use>
-					</svg>
-					<svg class="form-circle">
-						<use xlink:href="#circle" x="10" y="18">
-						</use>
-					</svg>
 				</div>
 			</div>
+
 
 			<div class="form-section">
 				<svg class="form-man">
@@ -50,32 +49,36 @@
 				</svg>
 				<input class="form-name" type="text" required="" placeholder="First name" name="psw" />
 			</div>
+
 		</form>
 
 
+		<div class="selects">
+			<div class="select">
+				<label class="select-caption">Subcategory 
+				<select class="select-categories">
+					<option class="select-li"></option>
+					<option class="select-li">Option</option>
+					<option class="select-li">Textarea</option>
+					<option class="select-li">Label</option>
+					<option class="select-li">Fieldset</option>
+					<option class="select-li">Legend</option>
+				</select>
+			</label>
+			</div>
 
-		<div class="select">
-			<h2 class="select-caption">Subcategory </h2>
-			<select class="select-categories">
-				<option class="select-li"></option>
-				<option class="select-li">Option</option>
-				<option class="select-li">Textarea</option>
-				<option class="select-li">Label</option>
-				<option class="select-li">Fieldset</option>
-				<option class="select-li">Legend</option>
-			</select>
-		</div>
-
-		<div class="select1">
-			<h2 class="select1-caption">Member Type </h2>
-			<select class="select1-categories">
-				<option class="select1-li">Designee</option>
-				<option class="select1-li">Developer</option>
-				<option class="select1-li">Tester</option>
-				<option class="select1-li">Team lead</option>
-				<option class="select1-li">PM</option>
-				<option class="select1-li">BA</option>
-			</select>
+			<div class="select1">
+				<label class="select1-caption"> Member Type 
+					<select class="select1-categories">
+						<option class="select1-li">Designee</option>
+						<option class="select1-li">Developer</option>
+						<option class="select1-li">Tester</option>
+						<option class="select1-li">Team lead</option>
+						<option class="select1-li">PM</option>
+						<option class="select1-li">BA</option>
+					</select>
+				</label> 
+			</div>
 		</div>
 
 		<div class="check">
@@ -91,11 +94,11 @@
 
 		<div class="check">
 			<label class="checkbox1">Fix price
-				<input class="checkbox1-input" type="radio" checked="checked" name="radio">
+				<input class="checkbox1-input" type="checkbox" checked="checked" name="checkbox">
 				<span class="checkmark1"></span>
 			</label>
 			<label class="checkbox1">Different prices
-				<input class="checkbox1-input" type="radio" name="radio">
+				<input class="checkbox1-input" type="checkbox" name="checkbox">
 				<span class="checkmark1"></span>
 			</label>
 		</div>
@@ -117,17 +120,17 @@
 		<div class="check">
 			<label class="checkbox3">Industrial Specialist - normal
 
-				<input class="checkbox3-input" type="radio" checked="checked" name="radio">
+				<input class="checkbox3-input" type="checkbox" checked="checked" name="checkbox">
 				<span class="checkmark3"></span>
 			</label>
 
 			<label class="checkbox3">Advisory Specialist - checked
-				<input class="checkbox3-input" type="radio" name="radio">
+				<input class="checkbox3-input" type="checkbox" name="checkbox">
 				<span class="checkmark3"></span>
 			</label>
 
 			<label class="checkbox3">Office Specialist - hover/focus
-				<input class="checkbox3-input" type="radio" name="radio">
+				<input class="checkbox3-input" type="checkbox" name="checkbox">
 				<span class="checkmark3"></span>
 			</label>
 		</div>
@@ -218,17 +221,7 @@
 				stroke-linejoin="round" />
 		</symbol>
 		<symbol id="traingle">
-			<path
-				d="M12.6587 1.2458C13.2518 0.251401 14.7482 0.251401 15.3413 1.2458L27.2936 21.287C27.8672 22.2489 27.1671 23.5 25.9523 23.5H2.04769C0.832938 23.5 0.132788 22.2489 0.70641 21.287L12.6587 1.2458Z"
-				fill="#FF6E6E" stroke="#FF6E6E" />
-		</symbol>
-
-		<symbol id="heit">
-			<path d="M0 0H4L3 9H1L0 0Z" fill="white" />
-		</symbol>
-
-		<symbol id="circle">
-			<circle cx="2" cy="2" r="2" fill="white" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2293 0.98969C13.0163 -0.329898 14.9837 -0.329896 15.7707 0.989691L27.723 21.0309C28.51 22.3505 27.5263 24 25.9523 24H2.04769C0.473725 24 -0.510002 22.3505 0.276981 21.0309L12.2293 0.98969ZM16 19C16 20.1046 15.1046 21 14 21C12.8954 21 12 20.1046 12 19C12 17.8954 12.8954 17 14 17C15.1046 17 16 17.8954 16 19ZM16 6H12L13 15H15L16 6Z" fill="#FF6E6E"/>
 		</symbol>
 
 		<symbol id="man" fill="none">
