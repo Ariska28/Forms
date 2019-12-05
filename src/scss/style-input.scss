@@ -1,8 +1,6 @@
 @import "reset";
 
-*:focus {
-  outline: 1px dashed red;
-}
+
 
 .conteiner {
   width: 80%;
@@ -67,22 +65,21 @@
     position: absolute;
     top: 37%;
     left: 20px;
+    transition: 0.4s;
   }
 
   &-email {
     width: 100%;
     border: 0;
-    padding: 20px 20px 20px 20px;
+    padding: 20px ;
     background: #fff;
     border: 1px solid #005faf;
     box-sizing: border-box;
     border-radius: 2px;
 
     &:focus {
-      outline: 0;
-
       border: 2px solid #34d2d2;
-      caret-color: #34d2d2;
+      padding: 19px ;
 
       & + .form-label {
         top: 20%;
@@ -93,6 +90,7 @@
 
     &:valid {
       border: 2px solid #34d2d2;
+      padding: 19px ;
 
       & + .form-label {
         opacity: 0;
@@ -663,32 +661,32 @@
   ::-webkit-input-placeholder {
     color: #9b94a3;
     font-family: "Righteous", cursive;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;  
     line-height: 37px;
     letter-spacing: 8px;
   }
   ::-moz-placeholder {
     color: #9b94a3;
     font-family: "Righteous", cursive;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 8px;
   } /* Firefox 19+ */
   :-moz-placeholder {
     color: #9b94a3;
     font-family: "Righteous", cursive;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 8px;
   } /* Firefox 18- */
   :-ms-input-placeholder {
     color: #9b94a3;
     font-family: "Righteous", cursive;
-    font-weight: 800;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 37px;
     letter-spacing: 8px;
   }
@@ -726,3 +724,6 @@
   right: 3%;
   top:22%;
 }
+
+/*-------------------------------------------------------*/
+
