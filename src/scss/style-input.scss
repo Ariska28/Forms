@@ -500,6 +500,9 @@
   }
 }
 /*------------------------------------------------*/
+
+
+
 .img {
   display: flex;
   margin-bottom: 50px;
@@ -551,40 +554,7 @@
       height: 20px;
     }
 
-    .circle {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      border: 1.5px dashed #1d24ab;
-      background: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .plus {
-      color: #1d24ab;
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .caption {
-      color: #ff8300;
-      font-family: "Nunito", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 17px;
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      transform: translate(-50%);
-      width: 80%;
-      text-align: center;
-    }
+   
   }
 }
 
@@ -726,4 +696,66 @@
 }
 
 /*-------------------------------------------------------*/
+
+
+.input-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__square {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: block;
+    height: 200px;
+    width:200px;
+    z-index: 2;
+    border: 0.5px solid #E2E2E5;
+    border-radius: 5px;  
+  }
+  
+  
+  &__circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1.5px dashed #1d24ab;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d24ab;
+  }
+  
+  &__caption {
+    color: #ff8300;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center;
+  }
+}
 
