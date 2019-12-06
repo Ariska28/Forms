@@ -13,23 +13,21 @@
 <body>
 	<div class="conteiner">
 
-
 		<form class="form">
-
-			<div class="form-section">
-				<label class="form-caption">Opening hours
-				<input class="form-password"pattern="[0-9]{6}" type="password" required="" placeholder=" " name="psw" />
-			    </label>
-			
+			<fieldset class="form__section">
+				<label class="form__caption">Opening hours
+					<input class="form__password" pattern="[0-9]{6}" type="password" required="" placeholder=" "
+						name="psw" />
+				</label>
 				<div class="requirements">
 					Error message here
 				</div>
-			</div>
+			</fieldset>
 
 
-			<div class="form-section">
-				<input class="form-email" type="email" name="email" required placeholder=" ">
-				<label class="form-label" for="email">Name*</label>
+			<fieldset class="form__section">
+				<input class="form__email" type="email" name="email" required placeholder=" ">
+				<label class="form__label" for="email">Name*</label>
 				<div class="requirements">
 					Please enter correct email
 				</div>
@@ -39,36 +37,35 @@
 						</use>
 					</svg>
 				</div>
-			</div>
+			</fieldset>
 
 
-			<div class="form-section">
+			<fieldset class="form__section">
 				<svg class="form-man">
 					<use xlink:href="#man" x="0" y="0">
 					</use>
 				</svg>
 				<input class="form-name" type="text" required="" placeholder="First name" name="psw" />
-			</div>
-
+			</fieldset>
 		</form>
 
 
-		<div class="selects">
-			<div class="select">
-				<label class="select-caption">Subcategory 
-				<select class="select-categories">
-					<option class="select-li"></option>
-					<option class="select-li">Option</option>
-					<option class="select-li">Textarea</option>
-					<option class="select-li">Label</option>
-					<option class="select-li">Fieldset</option>
-					<option class="select-li">Legend</option>
-				</select>
-			</label>
-			</div>
+		<form class="selects">
+			<fieldset class="select">
+				<label class="select-caption">Subcategory
+					<select class="select-categories">
+						<option class="select-li"></option>
+						<option class="select-li">Option</option>
+						<option class="select-li">Textarea</option>
+						<option class="select-li">Label</option>
+						<option class="select-li">Fieldset</option>
+						<option class="select-li">Legend</option>
+					</select>
+				</label>
+			</fieldset>
 
-			<div class="select1">
-				<label class="select1-caption"> Member Type 
+			<fieldset class="select1">
+				<label class="select1-caption"> Member Type
 					<select class="select1-categories">
 						<option class="select1-li">Designee</option>
 						<option class="select1-li">Developer</option>
@@ -77,66 +74,67 @@
 						<option class="select1-li">PM</option>
 						<option class="select1-li">BA</option>
 					</select>
-				</label> 
-			</div>
-		</div>
+				</label>
+			</fieldset>
+		</form>
 
-		<div class="check">
-			<label class="checkbox">Fix price
-				<input class="checkbox-input" type="radio" checked="checked" name="radio">
-				<span class="checkmark"></span>
-			</label>
-			<label class="checkbox">Different prices
-				<input class="checkbox-input" type="radio" name="radio">
-				<span class="checkmark"></span>
-			</label>
-		</div>
+		<form class="check">
 
-		<div class="check">
-			<label class="checkbox1">Fix price
-				<input class="checkbox1-input" type="checkbox" checked="checked" name="checkbox">
-				<span class="checkmark1"></span>
-			</label>
-			<label class="checkbox1">Different prices
-				<input class="checkbox1-input" type="checkbox" name="checkbox">
-				<span class="checkmark1"></span>
-			</label>
-		</div>
+			<fieldset class="check-conteiner">
+				<label class="checkbox">Fix price
+					<input class="checkbox-input" type="radio" checked="checked" name="radio">
+					<span class="checkmark"></span>
+				</label>
+				<label class="checkbox">Different prices
+					<input class="checkbox-input" type="radio" name="radio">
+					<span class="checkmark"></span>
+				</label>
+			</fieldset>
 
-		<div class="check">
-			<label class="checkbox2">I accept the terms of service and privacy policy.
-				<input class="checkbox2-input" type="checkbox" checked="checked" name="checkbox">
-				<svg class="square">
-					<use xlink:href="#sq" x="0" y="0">
-					</use>
-				</svg>
-				<svg class="ar">
-					<use xlink:href="#ar" x="0" y="0">
-					</use>
-				</svg>
-			</label>
-		</div>
+			<fieldset class="check-conteiner">
+				<label class="checkbox1">Fix price
+					<input class="checkbox1-input" type="checkbox" checked="checked" name="checkbox">
+					<span class="checkmark1"></span>
+				</label>
+				<label class="checkbox1">Different prices
+					<input class="checkbox1-input" type="checkbox" name="checkbox">
+					<span class="checkmark1"></span>
+				</label>
+			</fieldset>
 
-		<div class="check">
-			<label class="checkbox3">Industrial Specialist - normal
+			<fieldset class="check-conteiner">
+				<label class="checkbox2">I accept the terms of service and privacy policy.
+					<input class="checkbox2-input" type="checkbox" checked="checked" name="checkbox">
+					<svg class="square">
+						<use xlink:href="#sq" x="0" y="0">
+						</use>
+					</svg>
+					<svg class="ar">
+						<use xlink:href="#ar" x="0" y="0">
+						</use>
+					</svg>
+				</label>
+			</fieldset>
 
-				<input class="checkbox3-input" type="checkbox" checked="checked" name="checkbox">
-				<span class="checkmark3"></span>
-			</label>
+			<fieldset class="check-conteiner">
+				<label class="checkbox3">Industrial Specialist - normal
+					<input class="checkbox3-input" type="checkbox" checked="checked" name="checkbox">
+					<span class="checkmark3"></span>
+				</label>
+				<label class="checkbox3">Advisory Specialist - checked
+					<input class="checkbox3-input" type="checkbox" name="checkbox">
+					<span class="checkmark3"></span>
+				</label>
+				<label class="checkbox3">Office Specialist - hover/focus
+					<input class="checkbox3-input" type="checkbox" name="checkbox">
+					<span class="checkmark3"></span>
+				</label>
+			</fieldset>
+		</form>
 
-			<label class="checkbox3">Advisory Specialist - checked
-				<input class="checkbox3-input" type="checkbox" name="checkbox">
-				<span class="checkmark3"></span>
-			</label>
 
-			<label class="checkbox3">Office Specialist - hover/focus
-				<input class="checkbox3-input" type="checkbox" name="checkbox">
-				<span class="checkmark3"></span>
-			</label>
-		</div>
-
-		<div class="img">
-			<div class="img-conteiner">
+		<form class="img">
+			<fieldset class="img-conteiner">
 				<img src="img/image.png" alt="" class="img-container__img">
 				<div class="img-conteiner__buttons">
 					<button class="img-conteiner__button">
@@ -152,55 +150,50 @@
 						</svg>
 					</button>
 				</div>
-			</div>
+			</fieldset>
 
 
-			<div class="input-file">
-					<input type="file" name="file" id="file" class="input-file__input" />
-					<label class="input-file__square" for="file">		
-							
-					</label>
-					<label for="file" class="input-file__circle">	
-						+	
-					</label>
-					<label for="file" class="input-file__caption">	
-							Add photo or video
-					</label>
-			</div>
+			<fieldset class="input-file">
+				<input type="file" name="file" id="file" class="input-file__input" />
+				<label class="input-file__square" for="file">
 
-						
-		</div>
+				</label>
+				<label for="file" class="input-file__circle">
+					+
+				</label>
+				<label for="file" class="input-file__caption">
+					Add photo or video
+				</label>
+			</fieldset>
+		</form>
 
-
-
-
-
-		<div class="check">
-			<form class="decorating-form">
-				<input class="decorating-form__email" type="email" name="email" required
-					placeholder="Input your business mail">
-				<svg class="email">
-					<use xlink:href="#email" x="-0.5" y="4">
-					</use>
-				</svg>
-				<button class="decorating-form__submit">Subscribe </button>
-			</form>
-
-		</div>
-
-
-
-		<div class="check">
-			<form class="decorating-form1">
-				<input class="decorating-form1__email" type="email" name="email" required placeholder="ENTER EMAIL">
-				<button class="decorating-form1__submit">SUBSCRIBE 				
-					<svg class="button">				
-						<use xlink:href="#button" x="2" y="3">
+		<form class="check">
+			<fieldset class="check-conteiner">
+				<div class="decorating-form">
+					<input class="decorating-form__email" type="email" name="email" required
+						placeholder="Input your business mail">
+					<svg class="email">
+						<use xlink:href="#email" x="-0.5" y="4">
 						</use>
 					</svg>
-				</button>
-			</form>
-		</div>
+					<button class="decorating-form__submit">Subscribe </button>
+				</div>
+			</fieldset>
+
+
+
+			<fieldset class="check-conteiner">
+				<div class="decorating-form1">
+					<input class="decorating-form1__email" type="email" name="email" required placeholder="ENTER EMAIL">
+					<button class="decorating-form1__submit">SUBSCRIBE
+						<svg class="button">
+							<use xlink:href="#button" x="2" y="3">
+							</use>
+						</svg>
+					</button>
+				</div>
+			</fieldset>
+		</form>
 	</div>
 
 
@@ -221,7 +214,9 @@
 				stroke-linejoin="round" />
 		</symbol>
 		<symbol id="traingle">
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2293 0.98969C13.0163 -0.329898 14.9837 -0.329896 15.7707 0.989691L27.723 21.0309C28.51 22.3505 27.5263 24 25.9523 24H2.04769C0.473725 24 -0.510002 22.3505 0.276981 21.0309L12.2293 0.98969ZM16 19C16 20.1046 15.1046 21 14 21C12.8954 21 12 20.1046 12 19C12 17.8954 12.8954 17 14 17C15.1046 17 16 17.8954 16 19ZM16 6H12L13 15H15L16 6Z" fill="#FF6E6E"/>
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M12.2293 0.98969C13.0163 -0.329898 14.9837 -0.329896 15.7707 0.989691L27.723 21.0309C28.51 22.3505 27.5263 24 25.9523 24H2.04769C0.473725 24 -0.510002 22.3505 0.276981 21.0309L12.2293 0.98969ZM16 19C16 20.1046 15.1046 21 14 21C12.8954 21 12 20.1046 12 19C12 17.8954 12.8954 17 14 17C15.1046 17 16 17.8954 16 19ZM16 6H12L13 15H15L16 6Z"
+				fill="#FF6E6E" />
 		</symbol>
 
 		<symbol id="man" fill="none">
