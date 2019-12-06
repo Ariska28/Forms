@@ -266,22 +266,37 @@
 
 
   .start:disabled .start__text{
-   color: #B9C9D3;
+  color: #B9C9D3;
   }
   .start:disabled .draw-arrow{
     background: #B9C9D3;
-   }
+  }
 
 
-   .start:disabled .draw-arrow:after{
-    background: #B9C9D3;
-   }
+  .start:disabled .draw-arrow:after{
+  background: #B9C9D3;
+  }
 
-   .start:disabled .draw-arrow:before{
-    background: #B9C9D3;
-   }
+  .start:disabled .draw-arrow:before{
+  background: #B9C9D3;
+  }
 
+  .start:disabled:hover .draw-arrow {
+    width:20px;
+  }
 
+  .start:disabled:hover .draw-arrow:after {
+    left:49%;
+  }
+  
+  .start:disabled:hover .draw-arrow:before {
+    left:49%;
+  }
+  
+    
+  .start:disabled:hover .start__text {
+    border-color: transparent;
+  }
 
 
 
