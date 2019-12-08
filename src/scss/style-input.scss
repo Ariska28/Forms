@@ -156,19 +156,53 @@ label {
     display: none;
   }
 
-  &-name {
+  &__name {
     border: 1px solid #adadad;
     box-sizing: border-box;
     border-radius: 4px;
     padding: 10px;
     width: 100%;
+
+
+
+    &:focus {
+      border: 1px solid #ff8300;
+      background-position: 95% center;
+      background-repeat: no-repeat;
+    }
+
+
+    &:invalid:not(:focus):not(:placeholder-shown) {
+      border: 1px solid red;
+      background-position: 95% center;
+      background-repeat: no-repeat;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      border: 1px solid #ff8300;
+      background-position: 95% center;
+      background-repeat: no-repeat;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      & ~ .requirements {
+        display: none;
+      }
+    }
+
+    &:focus {
+      & ~ .requirements {
+        display: none;
+      }
+    }
   }
 
-  &-man {
+  &__man {
     position: absolute;
     right: 5%;
     width: 30px;
     height: 30px;
+    stroke: #C2C2C2;
   }
 
   ::-webkit-input-placeholder {
