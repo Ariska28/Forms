@@ -41,6 +41,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #005faf;
+  transition: 0.07s;
 }
 
 .send--blue:hover {
@@ -101,6 +102,7 @@
   color: #ffffff;
   box-shadow: none;
   justify-content: center;
+   transition: 0.3s;
 }
 
 .get-started:active {
@@ -146,6 +148,7 @@
 
 .login:hover .login-text {
   color: #fff;
+   transition: 0.3s;  
 }
 
 .login:hover {
@@ -247,15 +250,18 @@
 
 .start:hover .draw-arrow {
   width:30px;
+  transition: 0.3s;  
 }
 
 
 .start:hover .draw-arrow:after {
   left:65%;
+   transition: 0.3s;  
 }
 
 .start:hover .draw-arrow:before {
   left:65%;
+   transition: 0.3s;  
 }
 
 
@@ -327,6 +333,7 @@
 
 .yesterday:hover {
   background: #34005c;
+  transition: 0.3s;  
 }
 
 .yesterday:active {
@@ -405,10 +412,12 @@
 
 .WebApp:hover {
   background: black;
+  transition: 0.3s;  
 }
 
 .AppStore:hover {
   background: black;
+  transition: 0.3s;  
 }
 
 
